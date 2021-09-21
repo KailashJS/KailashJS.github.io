@@ -156,7 +156,7 @@ const projects = [
     projectName: "React Framer",
     projectDescription:
       "React website to demonstrate implementation of cool animations using Framer Package.",
-    projectImage: "images/React-framer.png",
+    projectImage: "images/react-framer.png",
     codeLink: "https://github.com/KailashJS/react-framer-demo",
     demoLink: "https://react-framer-demo.web.app/"
   },
