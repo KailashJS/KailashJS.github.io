@@ -145,6 +145,38 @@ class Project {
 
 const projects = [
   {
+    projectName: "Lavish React",
+    projectDescription:
+      "Created a website for the fictional brand Lavish with React. With Responsive Material design and reusable components.",
+    projectImage: "images/Lavish-react.png",
+    codeLink: "https://github.com/KailashJS/lavish-react-website",
+    demoLink: "https://lavish-react.web.app/"
+  },
+  {
+    projectName: "React Framer",
+    projectDescription:
+      "React website to demonstrate implementation of cool animations using Framer Package.",
+    projectImage: "images/React-framer.png",
+    codeLink: "https://github.com/KailashJS/react-framer-demo",
+    demoLink: "https://react-framer-demo.web.app/"
+  },
+  {
+    projectName: "Portfolio",
+    projectDescription:
+      "Designed & Built the Portfolio using HTML CSS and Vanilla JavaScript to show case the Professional Journey.",
+    projectImage: "images/portfolio.png",
+    codeLink: "https://github.com/KailashJS/kailash-portfolio/",
+    demoLink: "http://upskilljs.com/kailash.html"
+  },
+  {
+    projectName: "Photo Album",
+    projectDescription:
+      "Designed and Developed a Photo Album website using React and Material UI.",
+    projectImage: "images/photo-album.png",
+    codeLink: "https://github.com/KailashJS/react-framer-demo",
+    demoLink: "https://react-framer-demo.web.app/"
+  },
+  {
     projectName: "Covid Tracker",
     projectDescription:
       "Designed & Built a website using React.js to track the overall Covid-statistics.",
@@ -159,14 +191,6 @@ const projects = [
     projectImage: "images/healthy-elderly.png",
     codeLink: "https://github.com/KailashJS/the-healthy-elderly",
     demoLink: "http://thehealthyelderly.com/"
-  },
-  {
-    projectName: "Portfolio",
-    projectDescription:
-      "Designed & Built the Portfolio using HTML CSS and Vanilla JavaScript to show case the Professional Journey.",
-    projectImage: "images/portfolio.png",
-    codeLink: "https://github.com/KailashJS/kailash-portfolio/",
-    demoLink: "http://upskilljs.com/kailash.html"
   },
   {
     projectName: "Pulse graph",
