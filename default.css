@@ -34,8 +34,9 @@ h5,
 h6,
 strong {
     color: var(--mainText);
-    font-family: "Russo One", sans-serif;
-    font-weight: 500;
+    /* font-family: "Russo One", sans-serif; */
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
 }
 
 p,
@@ -45,12 +46,15 @@ label,
 input,
 textarea {
     color: var(--secondaryText);
-    font-family: "Roboto Mono", monospace;
+    /* font-family: "Roboto Mono", monospace; */
+    font-family: 'Arimo', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #17a2b8;
+    /* color: #17a2b8; */
+    /* color: #0443F2; */
+    color: #dc143c;
 }
 
 ul {
@@ -245,9 +249,9 @@ h6 {
 #preview-shadow {
     background-color: var(--previewShadow);
     max-width: 300px;
-    height: 180px;
-    padding-left: 30px;
-    padding-top: 30px;
+    height: 170px;
+    padding-left: 40px;
+    padding-top: 40px;
 }
 
 #preview {
@@ -256,6 +260,11 @@ h6 {
     background-color: var(--previewBg);
     padding: 15px;
     position: relative;
+}
+
+#preview-shadow:hover {
+    padding-left: 25px;
+    padding-top: 25px;
 }
 
 .corner {
@@ -323,7 +332,8 @@ h6 {
 
 .post-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
+    /* grid-template-columns: repeat(auto-fit, 320px); */
+    grid-template-columns: auto auto auto;
     gap: 20px;
     justify-content: center;
     padding-bottom: 50px;
@@ -431,13 +441,13 @@ h6 {
     height: 30px;width: 30px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
     .main-container {
         width: 95%;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     .intro-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -449,23 +459,47 @@ h6 {
     .right-column {
         justify-content: center;
     }
+
+    .post-wrapper {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, 320px); */
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     #preview-shadow {
-        max-width: 280px;
-        height: 180px;
+        max-width: 230px;
+        height: 200px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    #preview {
+        width: 210px;
+    }
+
+    #preview-shadow:hover {
         padding-left: 10px;
         padding-top: 10px;
     }
 
-    #preview {
-        width: 280px;
-    }
     .footer-icons img svg{
         margin: 5px;
         color: white;
         
         height: 25px;width: 25px;
+    }
+
+    .post-wrapper {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, 320px); */
+        grid-template-columns: auto;
+        gap: 20px;
+        justify-content: center;
+        padding-bottom: 50px;
     }
 }
