@@ -1,28 +1,28 @@
 function setTheme(mode) {
   if (mode === "light") {
     document.getElementById("theme-style").href = "default.css";
-    document.getElementById('github').style.fill="black";
+    document.getElementById('github').style.fill = "black";
     // document.getElementById('codesandbox').style.fill="black";
     // document.getElementById('codepen').style.fill="black";
   }
 
   if (mode === "blue") {
     document.getElementById("theme-style").href = "blue.css";
-    document.getElementById('github').style.fill="white";
+    document.getElementById('github').style.fill = "white";
     // document.getElementById('codesandbox').style.fill="white";
     // document.getElementById('codepen').style.fill="white";
   }
 
   if (mode === "green") {
     document.getElementById("theme-style").href = "green.css";
-    document.getElementById('github').style.fill="black";
+    document.getElementById('github').style.fill = "black";
     // document.getElementById('codesandbox').style.fill="black";
     // document.getElementById('codepen').style.fill="black";
   }
 
   if (mode === "purple") {
     document.getElementById("theme-style").href = "purple.css";
-    document.getElementById('github').style.fill="white";
+    document.getElementById('github').style.fill = "white";
     // document.getElementById('codesandbox').style.fill="black";
     // document.getElementById('codepen').style.fill="white";
   }
@@ -39,20 +39,20 @@ else setTheme("purple");
 let themeDots = document.getElementsByClassName("theme-dot");
 
 for (let theme = 0; themeDots.length > theme; theme++) {
-    themeDots[theme].addEventListener("click", function () {
-        let mode = this.dataset.mode;
-        setTheme(mode);
-    });
+  themeDots[theme].addEventListener("click", function () {
+    let mode = this.dataset.mode;
+    setTheme(mode);
+  });
 }
 
 class Project {
   constructor({
-                projectName,
-                projectDescription,
-                projectImage,
-                codeLink,
-                demoLink
-              }) {
+    projectName,
+    projectDescription,
+    projectImage,
+    codeLink,
+    demoLink
+  }) {
     this.title = this.createHeadingTag({
       headingType: "h6",
       className: "post-title",
@@ -71,7 +71,8 @@ class Project {
 
     this.code = this.createAttributeTag({
       href: codeLink,
-      text: "Source Code"
+      // text: "Source Code"
+      text: "Learn More"
     });
 
     this.projectImage = this.createImageTag({
@@ -146,91 +147,106 @@ class Project {
 
 const projects = [
   {
-    projectName: "Lavish React",
+    projectName: "Redify Inc.",
     projectDescription:
-      "Created a website for the fictional brand Lavish with React. With Responsive Material design and reusable components.",
-    projectImage: "images/Lavish-react.png",
-    codeLink: "https://github.com/KailashJS/lavish-react-website",
-    demoLink: "https://lavish-react.web.app/"
+      "Designed & developed the landing page for Redify Inc. with React.js (Freelancing project on Fiver).",
+    projectImage: "images/redify-landing-page.jpg",
+    codeLink: "https://github.com/KailashJS/website-redify/",
+    demoLink: "https://redifyinc.web.app/"
   },
-  {
-    projectName: "React Framer",
-    projectDescription:
-      "React website to demonstrate implementation of cool animations using Framer Package.",
-    projectImage: "images/react-framer.png",
-    codeLink: "https://github.com/KailashJS/react-framer-demo",
-    demoLink: "https://react-framer-demo.web.app/"
-  },
+  // {
+  //   projectName: "React Framer",
+  //   projectDescription:
+  //     "React website to demonstrate implementation of cool animations using Framer Package.",
+  //   projectImage: "images/react-framer.png",
+  //   codeLink: "https://github.com/KailashJS/react-framer-demo/",
+  //   demoLink: "https://react-framer-demo.web.app/"
+  // },
   {
     projectName: "Portfolio",
     projectDescription:
       "Designed & Built the Portfolio using HTML CSS and Vanilla JavaScript to show case the Professional Journey.",
-    projectImage: "images/portfolio.png",
+    projectImage: "images/new-portfolio.png",
     codeLink: "https://github.com/KailashJS/kailash-portfolio/",
-    demoLink: "http://upskilljs.com/kailash.html"
+    demoLink: "http://kailashjs.github.io/"
+  },
+  {
+    projectName: "Lavish React",
+    projectDescription:
+      "Created a website for the fictional brand Lavish with React. With Responsive Material design and reusable components.",
+    projectImage: "images/Lavish-react.png",
+    codeLink: "https://github.com/KailashJS/lavish-react-website/",
+    demoLink: "https://lavish-react.web.app/"
   },
   {
     projectName: "Photo Album",
     projectDescription:
       "Designed and Developed a Photo Album website using React and Material UI.",
     projectImage: "images/photo-album.png",
-    codeLink: "https://github.com/KailashJS/react-framer-demo",
-    demoLink: "https://react-framer-demo.web.app/"
+    codeLink: "https://github.com/KailashJS/photo-album/",
+    demoLink: "https://photo-album-c2c4e.web.app/"
   },
-  {
-    projectName: "Covid Tracker",
-    projectDescription:
-      "Designed & Built a website using React.js to track the overall Covid-statistics.",
-    projectImage: "images/Covid-tracker.png",
-    codeLink: "https://github.com/KailashJS/react-covid19-india",
-    demoLink: "https://vigorous-ardinghelli-2f2e8f.netlify.app/"
-  },
+  // {
+  //   projectName: "Covid Tracker",
+  //   projectDescription:
+  //     "Designed & Built a website using React.js to track the overall Covid-statistics.",
+  //   projectImage: "images/Covid-tracker.png",
+  //   codeLink: "https://github.com/KailashJS/react-covid19-india",
+  //   demoLink: "https://vigorous-ardinghelli-2f2e8f.netlify.app/"
+  // },
   {
     projectName: "The Healthy Elderly",
     projectDescription:
       "Designed & Built a website to share elderly health awareness insights, using HTML CSS and Vanilla JavaScript.",
     projectImage: "images/healthy-elderly.png",
     codeLink: "https://github.com/KailashJS/the-healthy-elderly",
-    demoLink: "http://thehealthyelderly.com/"
+    demoLink: "https://the-healthy-elderly.web.app/"
   },
   {
-    projectName: "Pulse graph",
+    projectName: "Dashboard for Redify Inc.",
     projectDescription:
-      "Developed a website using HTML CSS and Vanilla JavaScript to graphically visualize time-series real-time data.",
-    projectImage: "images/pulse-graph.png",
-    codeLink: "https://github.com/KailashJS/Pulse-graph",
-    demoLink: "https://thirsty-nobel-45078e.netlify.app/"
+      "Designed and developed UI/frontend for portal/Dashboard for Redify users with React.js",
+    projectImage: "images/Redify.jpg",
+    codeLink: "https://github.com/KailashJS/portal-redify",
+    demoLink: "https://portal-redifyinc.web.app/"
   },
-  {
-    projectName: "Bat eye Echolocator",
-    projectDescription:
-      "Developed a echolocator device using Arduino t help visually impaired person get spatial awareness.",
-    projectImage: "images/Echolocator.jpg",
-    codeLink: "https://github.com/KailashJS/DIH_Summer",
-    demoLink: "https://github.com/KailashJS/DIH_Summer"
-  },
-  {
-    projectName: "Responsive minimalist portfolio",
-    projectDescription:
-      "Developed a responsive minimalist portfolio using HTML, CSS $ Vanilla Javascript.",
-    projectImage: "images/minimal_portfolio.png",
-    codeLink: "https://github.com/KailashJS/KailashJS.github.io",
-    demoLink: "https://kailashjs.github.io/"
-  },
- 
+  // {
+  //   projectName: "Pulse graph",
+  //   projectDescription:
+  //     "Developed a website using HTML CSS and Vanilla JavaScript to graphically visualize time-series real-time data.",
+  //   projectImage: "images/pulse-graph.png",
+  //   codeLink: "https://github.com/KailashJS/Pulse-graph",
+  //   demoLink: "https://thirsty-nobel-45078e.netlify.app/"
+  // },
+  // {
+  //   projectName: "Bat eye Echolocator",
+  //   projectDescription:
+  //     "Developed a echolocator device using Arduino t help visually impaired person get spatial awareness.",
+  //   projectImage: "images/Echolocator.jpg",
+  //   codeLink: "https://github.com/KailashJS/DIH_Summer",
+  //   demoLink: "https://github.com/KailashJS/DIH_Summer"
+  // },
+  // {
+  //   projectName: "Responsive minimalist portfolio",
+  //   projectDescription:
+  //     "Developed a responsive minimalist portfolio using HTML, CSS $ Vanilla Javascript.",
+  //   projectImage: "images/minimal_portfolio.png",
+  //   codeLink: "https://github.com/KailashJS/KailashJS.github.io",
+  //   demoLink: "https://kailashjs.github.io/"
+  // },
 ];
 
 const createCards = () => {
   projects.map(project => {
-      const projectCard = new Project({
-        projectName: project.projectName,
-        projectDescription: project.projectDescription,
-        projectImage: project.projectImage,
-        codeLink: project.codeLink,
-        demoLink: project.demoLink
-      }).createProjectCard();
-      document.getElementById("post-wrapper-id").appendChild(projectCard);
-    }
+    const projectCard = new Project({
+      projectName: project.projectName,
+      projectDescription: project.projectDescription,
+      projectImage: project.projectImage,
+      codeLink: project.codeLink,
+      demoLink: project.demoLink
+    }).createProjectCard();
+    document.getElementById("post-wrapper-id").appendChild(projectCard);
+  }
   );
 };
 createCards();
