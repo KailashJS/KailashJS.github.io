@@ -147,6 +147,14 @@ class Project {
 
 const projects = [
   {
+    projectName: "Movie App - KailashJS",
+    projectDescription:
+      "The application is a movie database that allows users to search for information about movies. Developed with React and Redux toolkit.",
+    projectImage: "images/movie-app-kailashjs.jpg",
+    codeLink: "https://github.com/KailashJS/movie-app-kailashjs",
+    demoLink: "https://movieapp.kailashjs.com/"
+  },
+  {
     projectName: "Lavish React",
     projectDescription:
       "Created a website for the fictional brand Lavish with React. With Responsive Material design and reusable components.",
@@ -161,14 +169,6 @@ const projects = [
     projectImage: "images/redify-landing-page.jpg",
     codeLink: "https://github.com/KailashJS/website-redify/",
     demoLink: "https://redifyinc.web.app/"
-  },
-  {
-    projectName: "Movie App - KailashJS",
-    projectDescription:
-      "The application is a movie database that allows users to search for information about movies.",
-    projectImage: "images/movie-app-kailashjs.jpg",
-    codeLink: "https://github.com/KailashJS/movie-app-kailashjs",
-    demoLink: "https://movieapp.kailashjs.com/"
   },
   // {
   //   projectName: "React Framer",
@@ -208,7 +208,7 @@ const projects = [
       "Designed & Built the Portfolio using HTML CSS and Vanilla JavaScript to show case the Professional Journey.",
     projectImage: "images/new-portfolio.png",
     codeLink: "https://github.com/KailashJS/kailash-portfolio/",
-    demoLink: "http://kailashjs.github.io/"
+    demoLink: "http://kailashjs.com/"
   },
   {
     projectName: "Photo Album",
